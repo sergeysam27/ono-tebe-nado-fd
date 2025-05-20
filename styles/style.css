@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
-    padding: 92px 50px 96px;
+    padding: 92px 50px 97px;
 }
 
 .header__links-list {
@@ -17,14 +17,15 @@
     text-underline-offset: 4px;
 }
 
-.header__link_active {
+.header__links-item_no-bullit {
     text-decoration: none;
     list-style: none;
 }
 
 .header__logo-image {
     justify-content: center;
-    width: 130px;
+    width: 148px;
+    height: 105px;
 }
 
 .address {
@@ -42,30 +43,20 @@
 }
 
 .cover {
-    position: relative;
-    background-image: url(../images/cover.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/cover.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    z-index: -2;
-}
-
-.overlay {
-    position: absolute;
-    inset: 0;
-    background-color: rgb(0 0 0 / 0.6);
-    z-index: -1;
 }
 
 .cover__title {
-    position: relative;
     font-weight: 700;
     font-size: 100px;
-    line-height: 115%;
+    line-height: 113%;
     letter-spacing: 0.3em;
     text-transform: uppercase;
     color: #fff;
-    padding: 165px 50px 106px 50px;
+    padding: 169px 50px 108px;
 }
 
 .aligned-text {
@@ -74,26 +65,26 @@
 }
 
 .aligned-text_center {
-    text-align: center;
+    padding-left: 330.5px;
 }
 
 .aligned-text_right {
-    padding: 0;
-    text-align: right;   
+    padding-bottom: 0;
+    padding-left: 613px;   
 }
 
 .cover__description {
     padding: 0 50px 50px 50px;
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    gap: 107px;
-    font-weight: 500;
+    gap: 109px;
     font-size: 22px;
     text-transform: uppercase;
-    text-align: center;
     color: #fff;
-    word-spacing: 10px;
+}
+
+.cover__description-text {
+    word-spacing: 18px;     
 }
 
 .bet-button {
@@ -109,7 +100,7 @@
 }
 
 .lots {
-    padding: 174px 24px 126px 24px;
+    padding: 174px 24px 127px 24px;
 }
 
 .lots__heading {
@@ -124,6 +115,7 @@
 .lots__card-list {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 25px;
     list-style: none;
 }
@@ -133,33 +125,31 @@
     min-height: 596px;
 }
 
+.card-link {
+    text-underline-offset: 3px;
+}
+
 .card {
     min-height: 100%;
     padding: 48px 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .card_type_film {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/card-lot-01.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 
 .card_type_book {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/card-lot-02.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/card-lot-02.jpg); 
 }
 
 .card_type_picture {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/card-lot-03.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 
 .card__title {
@@ -182,7 +172,7 @@
 
 .lots__look-more-link {
     margin-top: 30px;
-    margin-left: 40px;
+    margin-left: 34px;
     margin-bottom: 2px;
     font-weight: 400;
     font-size: 20px;
@@ -191,7 +181,7 @@
     background: transparent;
     border: none;
     text-decoration: underline;
-    text-underline-offset: 4px;
+    text-underline-offset: 5px;
 }
 
 .about {
@@ -199,6 +189,7 @@
     display: grid;
     grid-template-columns: 334px 1fr;
     gap: 25px;
+    padding-top: 30px;
 }
 
 .about__logo {
@@ -208,6 +199,7 @@
     justify-self: center;
     justify-content: center;
     align-items: center;
+    padding-top: 0px;
     width: 240px;
     height: 240px;
 }
@@ -221,7 +213,7 @@
     font-size: 40px;
     text-transform: uppercase;
     color: #000;
-    padding-top: 133px;
+    padding-top: 102px;
     padding-bottom: 76px;
 }
 
@@ -231,6 +223,7 @@
     line-height: 120%;
     color: #000;
     padding-top: 24px;
+    padding-right: 5px;
 }
 
 .footer {
@@ -249,6 +242,7 @@
 
 .footer__menu-list-item {
     text-align: center;
+    font-size: 18px;
     text-underline-offset: 4px;
 }
 
