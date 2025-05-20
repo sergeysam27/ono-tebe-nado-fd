@@ -17,8 +17,11 @@
     text-underline-offset: 4px;
 }
 
-.header__links-item_no-bullit {
+.header__link_active {
     text-decoration: none;
+}
+
+.header__links-item_no-bullit {
     list-style: none;
 }
 
@@ -61,16 +64,20 @@
 
 .aligned-text {
     display: block;
-    padding-bottom: 20px;
+    padding-bottom: 21px;
 }
 
 .aligned-text_center {
-    padding-left: 330.5px;
+    text-align: center;
 }
 
 .aligned-text_right {
-    padding-bottom: 0;
-    padding-left: 613px;   
+    text-align: right;
+    padding-bottom: 0; 
+}
+
+.no-letter-spacing {
+   letter-spacing: 0;
 }
 
 .cover__description {
@@ -127,6 +134,7 @@
 
 .card-link {
     text-underline-offset: 3px;
+    text-decoration: none;
 }
 
 .card {
@@ -153,7 +161,6 @@
 }
 
 .card__title {
-    position: relative;
     font-weight: 700;
     font-size: 22px;
     line-height: 120%;
@@ -168,6 +175,7 @@
     font-size: 20px;
     line-height: 120%;
     color: #fff;
+    text-decoration: none;
 }
 
 .lots__look-more-link {
@@ -238,6 +246,10 @@
 
 .footer__menu-list {
     list-style: none;
+}
+
+.footer__menu-link_active {
+    text-decoration: none;
 }
 
 .footer__menu-list-item {
